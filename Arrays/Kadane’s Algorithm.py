@@ -1,7 +1,7 @@
 nums = [-2,1,-3,4,-1,2,1,-5,4]
 l = len(nums)
 if l<2:
-    print sum(nums)
+    print (sum(nums))
 else:
     max_value = 10**4
     nums_dict = {}
@@ -11,4 +11,4 @@ else:
                 nums_dict[tuple(nums[i:j])] = sum(nums[i:j])
                 max_val = sum(nums[i:j])
     max_val = max(nums_dict.values())
-    print max_val
+    print (max_val)
